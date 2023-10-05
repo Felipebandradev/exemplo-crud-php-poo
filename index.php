@@ -15,7 +15,7 @@
         <h2>Escolha o que deseja gerenciar:</h2>
         <ul>
             <li><a href="fabricantes/visualizar.php">Fabricantes</a></li>
-            <li><a href="produtos/visualizar.php">Produtos a</a></li>
+            <li><a href="produtos/visualizar.php">Produtos</a></li>
         </ul>
     </div>
 

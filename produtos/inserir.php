@@ -30,29 +30,30 @@ if(isset($_POST['inserir'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Inserção</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
+<body class="fundo-formulario">
     <div class="container">
         <h1>Produtos | INSERT</h1>
         <hr>
-        <form action="" method="post">
-            <p>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required>
+        <form action="" method="post"  class=" formulario row g-3">
+            <p class=" col-md-12">
+                <label class="form-label" for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" required>
             </p>
-            <p>
-                <label for="preco">Preço:</label>
-                <input type="number" min="10" max="10000" step="0.01"
+            <p class="col-md-6">
+                <label class="form-label" for="preco">Preço:</label>
+                <input class="form-control" type="number" min="10" max="10000" step="0.01"
                  name="preco" id="preco" required>
             </p>
-            <p>
-                <label for="quantidade">Quantidade:</label>
-                <input type="number" min="1" max="100"
+            <p class="col-md-6">
+                <label class="form-label" for="quantidade">Quantidade:</label>
+                <input class="form-control" type="number" min="1" max="100"
                  name="quantidade" id="quantidade" required>
             </p>
-            <p>
-                <label for="fabricante">Fabricante:</label>
-                <select name="fabricante" id="fabricante" required>
+            <p class=" col-md-12">
+                <label class="form-label" for="fabricante">Fabricante:</label>
+                <select class="form-select" name="fabricante" id="fabricante" required>
                     <option value=""></option>
         
                     <?php foreach($listaDeFabricantes as $fabricante) { ?>
@@ -62,14 +63,14 @@ if(isset($_POST['inserir'])){
                     <?php } ?>
                 </select>
             </p>
-            <p>
-                <label for="descricao">Descrição:</label> <br>
-                <textarea name="descricao" id="descricao" cols="30" rows="3"></textarea>
+            <p class=" col-md-12">
+                <label class="form-label" for="descricao">Descrição:</label> <br>
+                <textarea class="form-control" name="descricao" id="descricao" cols="30" rows="3"></textarea>
             </p>
-            <button type="submit" name="inserir">Inserir produto</button>
+            <button class="btn" type="submit" name="inserir">Inserir produto</button>
         </form>
         <hr>
-        <p><a href="visualizar.php">Voltar</a></p>
+        <p><a class="btn" href="visualizar.php">Voltar</a></p>
     </div>
     
 </body>

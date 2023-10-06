@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    background-color: #e091c2;
+    font-family: 'PT Serif', serif;
+}
+.cartao {
+    width: 350px;
+    margin-bottom: 10px;
+    margin: 20px;
+    box-shadow: black inset 2px 2px 10px;
+    background: rgb(81, 24, 43);
+    background: linear-gradient(90deg, rgba(81, 24, 43, 1) 0%, rgba(255, 126, 167, 1) 0%, rgba(255, 63, 147, 1) 22%, rgba(255, 87, 155, 1) 86%, rgba(255, 0, 127, 1) 100%, rgba(81, 24, 43, 1) 100%);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.cartao:hover {
+    box-shadow: black 2px 2px 10px;
+}
+
+.cartao h3 {
+    background: rgb(81, 24, 43);
+    background: linear-gradient(90deg, rgba(81, 24, 43, 1) 0%, rgba(230, 25, 229, 1) 0%, rgba(255, 0, 255, 1) 22%, rgba(230, 25, 229, 1) 86%, rgba(255, 0, 255, 1) 100%, rgba(81, 24, 43, 1) 100%);
+    border-radius: 20px;
+}
+
+.btn {
+    color: aliceblue;
+    background-color: #b814b8;
+}
+
+.btn:hover {
+    background-color: #ff00ff;
+    color: aliceblue
+}
+
+.formulario{
+    margin-bottom: 10px;
+    margin: 20px;
+    box-shadow: black inset 2px 2px 10px;
+    background-color: #45a253;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fundo-formulario{
+    background-color: #a1cca2;
+}

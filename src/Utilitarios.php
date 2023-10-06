@@ -14,7 +14,7 @@ abstract class Utilitarios {
     
     public static function calcularTotal(float $valor, int $qtd):string {
         $total = $valor * $qtd;
-        return Utilitarios::formatarPreco($total);
+        return self::formatarPreco($total);
     }
 
 
